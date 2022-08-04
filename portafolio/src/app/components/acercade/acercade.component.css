@@ -1,0 +1,33 @@
+.row{
+    padding:20px;
+}
+div{
+    background-color: #a1b5cb;
+    text-align: center;
+}
+/*estilo de perfil*/
+@media(min-width: 576px){
+    #perfil{
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        left: 2%;
+        top: 550px;
+    }
+}
+@media(max-width: 575px){
+    #perfil{
+        position: absolute;
+        width: 35%;
+        border-radius: 100%;
+        left: 35%;
+        top: 600px;
+    }
+}
+
+#nombre{
+    font-weight: bold;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
