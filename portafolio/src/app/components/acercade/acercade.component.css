@@ -1,9 +1,30 @@
+@font-face{
+    font-family: "mono";
+    src: url(../../../assets/fonts/Ra-Mono.otf);
+  }
+@font-face{
+    font-family: "black";
+    src: url(../../../assets/fonts/ArchivoBlack-Regular.ttf);
+ }
 .row{
     padding:20px;
 }
 div{
-    background-color: #ADBCBF;
+    background-color: #025b6031;
     text-align: center;
+    
+}
+/*estilo de fuente*/
+p{
+    font-family: "mono";
+}
+h2{
+    font-family: "black";
+}
+#nombre{
+    font-size: 20px;
+    font-family: "mono";
+    font-weight: bold;
 }
 /*estilo de perfil*/
 @media(min-width: 576px){
@@ -21,13 +42,8 @@ div{
         width: 35%;
         border-radius: 100%;
         left: 35%;
-        top: 600px;
+        top: 500px;
     }
 }
 
-#nombre{
-    font-weight: bold;
-    font-size: 20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-}
