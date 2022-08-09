@@ -20,6 +20,9 @@
     display: inline-block;
     text-align: justify;
  }
+ p,h2{
+   font-family: "mono";
+ }
  /*.imagen{
     width: 100px;
     height:100px;

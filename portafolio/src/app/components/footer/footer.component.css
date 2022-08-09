@@ -7,18 +7,12 @@
     src: url(../../../assets/fonts/ArchivoBlack-Regular.ttf);
  }
 .row{
-    margin: 0px;    
-    padding: 20px;
+ 
+    background-color: #025C60;
 }
-div{
-    background-color: #025b6031;
+footer{
     font-family: "mono";
-   
-}
-h1{
-    font-family: "black";
-}
-h2,h3{
-    display: inline;
-    font-family:"mono";
+    font-weight: bold;
+    color: white;
+    text-align: center;
 }
