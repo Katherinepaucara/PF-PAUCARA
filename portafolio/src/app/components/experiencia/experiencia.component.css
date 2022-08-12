@@ -12,10 +12,10 @@
 div{
     background-color: white;
     font-family: "mono";
-   
 }
 h1{
     font-family: "black";
+    color: #031929;
 }
 h2,h3{
     display: inline;

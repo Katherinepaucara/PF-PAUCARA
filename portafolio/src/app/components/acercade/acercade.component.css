@@ -8,18 +8,17 @@
  }
 .row{
     padding:20px;
-}
-div{
-    background-color: #025b6031;
-    text-align: center;
-    
+    background-color: white;
 }
 /*estilo de fuente*/
 p{
     font-family: "mono";
+    text-align: justify;
 }
 h2{
+    text-align:center;
     font-family: "black";
+    color: #031929;
 }
 #nombre{
     font-size: 20px;
@@ -33,7 +32,7 @@ h2{
         width: 15%;
         border-radius: 100%;
         left: 2%;
-        top: 550px;
+        top: 590px;
     }
 }
 @media(max-width: 575px){
@@ -42,7 +41,7 @@ h2{
         width: 35%;
         border-radius: 100%;
         left: 35%;
-        top: 500px;
+        top: 560px;
     }
 }
 

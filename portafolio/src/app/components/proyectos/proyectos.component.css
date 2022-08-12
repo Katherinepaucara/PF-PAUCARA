@@ -8,6 +8,7 @@
  }
  h1{
     font-family: "black";
+    color: #031929;
  }
  .row{
     padding: 20px;
@@ -23,7 +24,3 @@
  p,h2{
    font-family: "mono";
  }
- /*.imagen{
-    width: 100px;
-    height:100px;
- }*/
