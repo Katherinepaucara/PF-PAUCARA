@@ -1,0 +1,71 @@
+@font-face{
+    font-family: "mono";
+    src: url(../../../assets/fonts/Ra-Mono.otf);
+  }
+@font-face{
+    font-family: "black";
+    src: url(../../../assets/fonts/ArchivoBlack-Regular.ttf);
+ }
+h1{
+    font-family:"black";
+    font-size: 55px;
+    margin-bottom:0px;
+ }
+h2{
+    font-family:"black";
+    font-size: 36px;
+ }
+ #iniciar{
+    padding:15px;
+    margin-bottom:0px;
+    font-size:25px;
+    font-family:"black";
+}
+p{
+    font-family:"mono";
+    padding-left: 0px;
+ }
+label{
+    margin-top:8px;
+    font-family:"mono";
+}
+
+.background-radial-gradient {
+  background-color: hsl(182, 40%, 15%);
+  background-image: radial-gradient(650px circle at 0% 0%,
+      hsl(182, 41%, 35%) 15%,
+      hsl(182, 41%, 30%) 35%,
+      hsl(182, 41%, 20%) 75%,
+      hsl(182, 41%, 19%) 80%,
+      transparent 100%),
+    radial-gradient(1250px circle at 100% 100%,
+      hsl(182, 41%, 45%) 15%,
+      hsl(182, 41%, 30%) 35%,
+      hsl(182, 41%, 20%) 75%,
+      hsl(182, 41%, 19%) 80%,
+      transparent 100%);
+}
+
+#radius-shape-1 {
+  height: 220px;
+  width: 220px;
+  top: -60px;
+  left: -130px;
+  background: radial-gradient(#015252, #00c5bb);
+  overflow: hidden;
+}
+
+#radius-shape-2 {
+  border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+  bottom: -60px;
+  right: -110px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(#02afaf, #004141);
+  overflow: hidden;
+}
+
+.bg-glass {
+  background-color: hsla(0, 0%, 100%, 0.9) !important;
+  backdrop-filter: saturate(200%) blur(25px);
+}
