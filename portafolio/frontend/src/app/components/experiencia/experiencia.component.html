@@ -1,8 +1,28 @@
 <div class="row">
     <h1> EXPERIENCIA LABORAL</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-outline-info" routerLink="/nuevaexp" *ngIf="isLogged">añadir</button>
+    </div>
+
     <div class="col-lg-1"></div>
     <div class="col-lg-11">
-        <ul>
+       <table class="table">
+        <tbody>
+            <tr *ngFor="let Experiencia of expe">
+                <td>{{Experiencia.nombreE}}</td>
+                <td>{{Experiencia.descripcionE}}</td>
+                <td *ngIf="isLogged"><button class="btn btn-outline-info" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-square"></i>EDITAR</button></td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                        <i class="bi bi-trash-fill"></i> BORRAR</button>
+                </td>
+            </tr>
+        </tbody>
+       </table>
+    </div>
+</div>
+
+<!-- <ul>
             <li>
                 <h2> 1er trabajo</h2>
                 <h3> (año) </h3>
@@ -15,6 +35,4 @@
                 <h3> (año) </h3>
             </li>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolores quibusdam saepe nostrum consectetur illum molestias voluptatum itaque, laborum rem animi maiores. Asperiores excepturi quae cumque nihil. Sed, alias dignissimos?</p>
-        </ul>
-    </div>
-</div>
+        </ul>-->
