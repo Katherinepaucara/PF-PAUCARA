@@ -24,9 +24,9 @@ export class NewExperienciaComponent implements OnInit {
         alert("Experiencia Añadida");
         this.router.navigate(['']);
       }, err =>{
-        alert("Error");
+        alert("Errors"); 
         this.router.navigate(['']);
       }
-      )
+    )
   }
 }

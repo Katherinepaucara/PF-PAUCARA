@@ -8,13 +8,13 @@ import javax.persistence.Id;
 
 @Entity
 public class Experiencia {
-    @Id
+   @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nombreE;
     private String descripcionE;
     
-    //constructores
+    //Constructores
 
     public Experiencia() {
     }
@@ -24,7 +24,7 @@ public class Experiencia {
         this.descripcionE = descripcionE;
     }
     
-    //getter and setter
+    //Getters and setters
 
     public int getId() {
         return id;
