@@ -1,12 +1,44 @@
 <div class="row">
-    <h1>PROYECTOS</h1>
-    <div class="contenedor">
-        <div class="col-sm-12 col-md-6 col-lg-6 desc">
-            <h2>Ranking Peliculas MARVEL</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore libero veniam sint ratione magni accusamus minima alias officiis magnam possimus, ducimus enim assumenda repellendus nemo repudiandae perferendis? Pariatur, numquam.</p>
-        </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 offset-md-1 offset-md-1 img">
-            <img src="../../../assets/RK-MARVEL.png" class="img-fluid"> 
-        </div>
+  <h1>PROYECTOS</h1>
+    <div class="col-lg-2">
+      <button
+        type="button"
+        class="btn btn-outline-info"
+        routerLink="/nuevopro"
+        *ngIf="isLogged"
+      >
+        AGREGAR
+      </button>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-11">
+      <table class="table">
+        <tbody>
+          <tr *ngFor="let Proyecto of proyecto">
+            <td valign="middle">
+              <h2>{{ Proyecto.nombreP }}</h2>
+            </td>
+            <td valign="middle">
+              <h5>{{ Proyecto.descripcionP }}</h5>
+            </td>
+            
+            <td *ngIf="isLogged" valign="middle">
+              <button
+                class="btn btn-success"
+                routerLink="/editpro/{{ Proyecto.id }}"
+              >
+                <i class="bi bi-pencil-square"></i>EDITAR
+              </button>
+            </td>
+            <td *ngIf="isLogged" valign="middle">
+              <button class="btn btn-danger" (click)="delete(Proyecto.id)">
+                <i class="bi bi-trash-fill"></i>BORRAR
+              </button>
+            </td>
+          </tr>
+              <div class="col-sm-12 col-md-4 col-lg-4 offset-md-1 offset-md-1 img">
+                <img src="../../../assets/RK-MARVEL.png" class="img-fluid" alt="Responsive image" />
+              </div>
+        </tbody>
+      </table>
     </div>
 </div>
